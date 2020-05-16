@@ -1,0 +1,670 @@
+.container-fluid{
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+/* .container-fluid{
+    padding: 0;
+} */
+.row{
+    margin:0;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6,
+.col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11,
+.col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7,
+.col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11,
+.col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7,
+.col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11,
+.col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8,
+.col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2,
+.col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto 
+    {position: relative;
+
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100vh;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    -ms-overflow-style: none;
+}
+.con{
+    background-image: url(../../bootstrap-4.4.1-dist/images/BG_Mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    width: 100%;
+    /* background-color: black; */
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.bar{
+    max-height: 100vh;
+    width: 100vw;
+    background-color: #6e9ef5;
+    padding: 0;
+    margin: 0;
+}
+
+.full-screen{
+    transform: translateY(30vh);
+    width: 100;
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+    display: block;
+    
+    /* scroll-margin-top: 30vh; */
+}
+
+#section1{
+    margin-top: -5vh;    
+}
+
+/* #section2{
+    background-color: red;
+}
+
+#section3{
+    background-color: yellow;
+}
+
+
+#section5{
+    background-color: green;
+} */
+
+
+
+.img-bg{
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    
+
+}
+
+        .img1{
+            width: 100%;
+            height: 45vh;
+            background-image: url(../images/Badges-01.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            position: absolute;
+            top: 2.5vh;
+
+        }
+
+        .img1:hover{
+            width: 100%;
+            height: 45vh;
+            background-image: url(../images/Badges-02.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            position: absolute;
+            top: 2.5vh;
+            transition: 1s;
+        }
+
+        .img2{
+            width: 100%;
+            height: 45vh;
+            background-image: url(../images/Badges-03.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            position: absolute;
+            top: 2.5vh;
+
+        }
+
+        .img2:hover{
+            width: 100%;
+            height: 45vh;
+            background-image: url(../images/Badges-04.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            position: absolute;
+            top: 2.5vh;
+            transition: 1s;
+        }
+
+        .img3{
+            width: 100%;
+            height: 45vh;
+            background-image: url(../images/Badges-05.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            position: absolute;
+            top: 2.5vh;
+
+        }
+
+        .img3:hover{
+            width: 100%;
+            height: 45vh;
+            background-image: url(../images/Badges-06.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            position: absolute;
+            top: 2.5vh;
+            transition: 1s;
+        }
+
+        .img4{
+            width: 100%;
+            height: 45vh;
+            background-image: url(../images/Badges-07.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            position: absolute;
+            top: 2.5vh;
+
+        }
+
+        .img4:hover{
+            width: 100%;
+            height: 45vh;
+            background-image: url(../images/Badges-08.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            position: absolute;
+            top: 2.5vh;
+            transition: 1s;
+        }
+
+
+
+.text-pos{
+    position: absolute;
+    bottom: 0;
+    height: 20vh;
+    width: 100vw;
+}
+
+.new-line{
+    width: 100%;
+    position: absolute;
+    top: 0vh;
+    left: 10%;
+    font-weight: 700;
+    font-size: 6vh;
+
+}
+.new-line2{
+    width: 80%;
+    position: absolute;
+    
+    top: 9vh;
+    left: 10%;
+    font-size: 3vh;
+    line-height: 4vh;
+}
+
+#dotnav {
+    display: none;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/BlackOpsOne-Regular.ttf)
+}
+.font-edit{
+    font-family: myFirstFont;
+    font-size: 240%;
+    line-height: 100%;
+    color: white;
+    width: 100vw;
+    padding-left:10vh;
+    padding-top: 6vh;
+    z-index: 10;
+}
+.font-edit-2{
+    display: none;
+ }
+.logo{
+    padding-left: 10vh;
+    position: relative;
+    top: 6vh;
+    height: 15%;;
+}
+
+.logo-big{
+    display: none;
+}
+
+@media(min-width:576px){
+    body {
+        overflow-y: hidden;
+    }
+
+    
+    #dotnav{
+        display: block;
+        height: 20vh;
+        width: 5vw;
+        position: fixed;
+        top: 39.5vh;
+        right: 0vw;
+        z-index: 50;
+        font-size: 5vh;
+        line-height: 5vh;
+        text-align: center;
+    }
+
+    a{
+    color: yellow;
+        width: 5vw;
+        height: 4vh;
+        position: absolute;
+        left: 5px;
+    }
+    a:focus-visible{
+        font-size: 80px;
+        transform: translateY(-10%);
+    }
+
+    .active {
+        color: white;
+        font-size: 10vh;
+    }
+
+
+    .container-fluid{
+        box-sizing: border-box;
+     
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 40vh;
+        margin-top: 40vh;
+    }
+
+
+    .font-edit-2{
+       display: none;
+    }
+
+    
+    .font-edit{
+        font-family: myFirstFont;
+        font-size: 350%;
+        line-height: 100%;
+        color:white;
+        width: 60vw;
+        padding-left:8vh;
+        padding-top: 10vh;
+        margin:0;
+        z-index: 10;
+    }
+    
+    .logo{
+        padding-left: 7vh;
+        position: relative;
+        top: 2vh;
+        height: 150%;;
+    }
+    
+
+    .logo-big{
+        display: none;
+    }
+    .con{
+        height: 40vh;
+        width: 100vw;
+
+    }
+
+   
+
+    .full-screen{
+        transform: translateY(40vh);
+        width: 100%;
+        height: 60vh;
+        margin: 0;
+        padding-top: 40vh;
+        /* scroll-margin-top: 40vh; */
+    }
+
+    .img-bg{
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+    
+    }
+
+            .img1{
+                width: 100%;
+                height: 50vh;
+                background-image: url(../images/Badges-01.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                position: absolute;
+                top: 5vh;
+            
+            }
+
+            .img1:hover{
+                width: 100%;
+                height: 50vh;
+                background-image: url(../images/Badges-02.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                position: absolute;
+                top: 5vh;
+                transition: 1s;
+            }
+
+            .img2{
+                width: 100%;
+                height: 50vh;
+                background-image: url(../images/Badges-03.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                position: absolute;
+                top: 5vh;
+            
+            }
+
+            .img2:hover{
+                width: 100%;
+                height: 50vh;
+                background-image: url(../images/Badges-04.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                position: absolute;
+                top: 5vh;
+                transition: 1s;
+            }
+
+            .img3{
+                width: 100%;
+                height: 50vh;
+                background-image: url(../images/Badges-05.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                position: absolute;
+                top: 5vh;
+            
+            }
+
+            .img3:hover{
+                width: 100%;
+                height: 50vh;
+                background-image: url(../images/Badges-06.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                position: absolute;
+                top: 5vh;
+                transition: 1s;
+            }
+
+            .img4{
+                width: 100%;
+                height: 50vh;
+                background-image: url(../images/Badges-07.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                position: absolute;
+                top: 5vh;  
+                margin-bottom: 10vh;
+            
+            }
+
+            .img4:hover{
+                width: 100%;
+                height: 50vh;
+                background-image: url(../images/Badges-08.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                position: absolute;
+                top: 5vh;
+                transition: 1s;
+            }
+
+    .text-pos{
+        position: relative;
+        
+        height: 20vh;
+        width: 100vw;
+    }
+
+    .new-line{
+        width: 100%;
+        position: absolute;
+        top: 16vh;
+        left: 10%;
+        font-weight: 700;
+        font-size: 200%;
+
+    }
+    .new-line2{
+        width: 100%;
+        position: absolute;
+        
+        top: 28vh;
+        left: 10%;
+        font-size: 3.5vh;
+        line-height: 4vh;
+    }
+    
+    /* #section4{
+       transform: translatey(-20VH);
+    } */
+    
+
+    
+}
+
+@media(min-width:768px){
+
+    
+    .font-edit{
+        font-family: myFirstFont;
+        font-size: 450%;
+        line-height: 12vh;
+        color: white;
+        width: 50%;
+        padding-left:12vh;
+        padding-top: 8vh;
+        margin:0;
+        z-index: 200;
+    }
+
+    .con{
+        height: 50vh;
+        width: 100vw;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        z-index: 0;
+    }
+        
+    .full-screen{
+        transform: translateY(0%);
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        /* scroll-margin-top: 0; */
+    }
+
+    .img-bg{
+        max-width: 100%;
+        max-height: 100vh;
+        position: relative;
+    
+    }
+    
+            .img1{
+                width: 100%;
+                height: 70vh;
+                background-image: url(../images/Badges-01.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                position: absolute;
+                top: 15vh;
+            
+            }
+
+            .img1:hover{
+                width: 100%;
+                height: 70vh;
+                background-image: url(../images/Badges-02.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                position: absolute;
+                top: 15vh;
+                transition: 1s;
+            }
+
+            .img2{
+                width: 100%;
+                height: 70vh;
+                background-image: url(../images/Badges-03.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                position: absolute;
+                top: 15vh;
+            
+            }
+
+            .img2:hover{
+                width: 100%;
+                height: 70vh;
+                background-image: url(../images/Badges-04.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                position: absolute;
+                top: 15vh;
+                transition: 1s;
+            }
+
+            .img3{
+                width: 100%;
+                height: 70vh;
+                background-image: url(../images/Badges-05.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                position: absolute;
+                top: 15vh;
+            
+            }
+
+            .img3:hover{
+                width: 100%;
+                height: 70vh;
+                background-image: url(../images/Badges-06.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                position: absolute;
+                top: 15vh;
+                transition: 1s;
+            }
+
+            .img4{
+                width: 100%;
+                height: 70vh;
+                background-image: url(../images/Badges-07.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                position: absolute;
+                top: 15vh;
+            
+            }
+
+            .img4:hover{
+                width: 100%;
+                height: 70vh;
+                background-image: url(../images/Badges-08.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                position: absolute;
+                top: 15vh;
+                transition: 1s;
+            }
+
+    .text-pos{
+        position: relative;
+        top: 0;
+        
+        height: 60vh;
+        width: 100vw;
+    }
+    
+    .new-line{
+        position: absolute;
+        top: 55vh;
+        left: 10%;
+        font-weight: 700;
+        font-size: 300%;
+
+    }
+    .new-line2{
+        position: absolute;
+        width:80%;
+        top: 70vh;
+        left: 10%;
+        font-size: 4vh;
+        line-height: 5vh;
+    }
+    .logo{
+        position: fixed;
+        top: 3vh;
+        left: 5vh;
+        z-index: 200;
+        height: 5vh ; 
+    }
+    /* .logo-big{
+        padding-left: 1vh;
+        height: 5vh;;
+        z-index: 500;
+        position: fixed;
+        top: 6vh;
+        left: 1vh;
+    }
+     */
+}

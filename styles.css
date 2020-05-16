@@ -1,0 +1,93 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.bar{
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.logo{
+    height: 40px;
+    position: absolute;
+    top: 10px;
+}
+.min-h{
+    min-height: 610px;
+}
+
+.gred{
+    background-image: linear-gradient(-130deg, #682462, #8762b2);  
+ }
+
+.heading{
+    width: 100%;
+} 
+
+.img-size{
+     width: 100%;
+}
+
+.img-thumb{
+    width: 80%;
+    /* padding-top: 8%; */
+}
+
+.down{
+    padding-top: 7%;
+    text-align: center;
+}
+
+.zoom {
+    transition: transform 1s;
+    margin: 0 auto;
+}
+  
+.zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+.flex-line{
+    width: 100%;
+}
+
+.heit{
+    min-height: 510px;
+    /* background-color: red; */
+}
+
+.heit-2{
+    min-height: 300px;
+    background-color: black;
+}
+
+.ylw{
+    color: yellow;
+}
+
+@media(min-width:768px){
+body{min-height:20vh;}
+.navbar-default{
+  transition:300ms ease;
+  background:transparent;
+}
+.navbar-default.scrolled{
+  background:#8762b2;
+}
+
+.navbar-toggler-icon{
+    /* background-color: white; */
+    stroke: 2px, white;
+    
+}
+}
+@media(max-width:768px){
+    .navbar{
+        background:#8762b2;
+    }
+}
