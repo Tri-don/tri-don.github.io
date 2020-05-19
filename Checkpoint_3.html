@@ -9,37 +9,40 @@
     <link rel="stylesheet" href="styles.css">
     <title>Eventique's</title>
 </head>
-<body data-spy="scroll" data-target="#list" data-offset="50">
-    <header class="fluid-container bg-secondary" id="st">
+<body data-spy="scroll" data-target="#sc" data-offset="0">
         <nav class="navbar navbar-expand-md navbar-default fixed-top" id="sc"> 
             <div class="container">
             <a href="#" class="navbar-brand"><img class="logo" src="./bootstrap-4.4.1-dist/images/Eventique's_Logo_1.png" alt=""></a>
             <button class="navbar-toggler btn-w" data-toggle="collapse" data-target="#navbarMenu">
-             
+               <span class="btn-w">
+                    <div class="con" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                      </div>
+                </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarMenu">
            
-            <ul class="navbar-nav ml-auto" id="list">
+            <ul class="navbar-nav ml-auto" >
                 <li class="nav-item">
-                    <a class="nav-link mr-5" href="#home">Home</a>
+                    <a class="nav-link mr-5 text-primary active" href="#home">Home</a>
                 </li>   
                 <li class="nav-item">
-                    <a class="nav-link mr-5" href="#Gallery">Gallery</a>
+                    <a class="nav-link  mr-5 text-primary" href="#Gallery">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-5" href="#Services">Service</a>
+                    <a class="nav-link mr-5 col1" href="#Services">Service</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mr-5" href="#Contact">ContactUs</a>
+                    <a class="nav-link mr-5 col1" href="#Contact">ContactUs</a>
                 </li>
             </ul>
         </div>
         </div>
-        </nav>
+    </nav>
 
-    </header>
-
-    <main>
+   
 
         <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------Home-->
         <section class="container-fluid gred" id="home">
@@ -183,8 +186,6 @@
         </section>
         <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------Services End-->
 
-    </main>
-
 
     <footer>
         <section class="container-fluid" id="Contact">
@@ -239,16 +240,15 @@
         
         var header = document.getElementById("sc");
         var btns = header.getElementsByClassName("col1");
-        // for (var i = 0; i < btns.length; i++) {
-        //     btns[i].addEventListener("click", function() {
-        // var current = document.getElementsByClassName("col2");
-        // current[0].className = current[0].className.replace(" col2", "");
-        // this.className += " col2";
-        //  });
-        // }
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("col2");
+        current[0].className = current[0].className.replace(" col2", "");
+        this.className += " col2";
+         });
+        }
 
-        $('body').scrollspy({ target: '#list' })
-
+        $('body').scrollspy({ target: '#sc' })
     </script>
 </body>
 </html>
